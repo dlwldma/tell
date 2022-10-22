@@ -1,5 +1,6 @@
 body{
     background-color: #FFECEC;
+    overflow-x: hidden;
 }
 .principal{
     display: grid;
@@ -8,7 +9,6 @@ body{
     height: 100vh;
 }
 .principal > div{
-    position: relative;
     height: 900px;
     grid-column: 2;
 }
@@ -29,12 +29,37 @@ body{
     width: 645px;
     height: 90%; 
     margin-right: 0px;
-    background-color: white;
     margin-top: 23px;
     margin-left: 383px;
     margin-right: 43px;
+}
+
+.DoPostMenu{
+    width: 100%;
+    height: 175px; 
+    background-color: white;
     border-radius: 15px;
     border: 1px solid #ED9696;
+
+
+}
+.PostSection{
+    width: 100%;
+    height: fit-content; 
+    margin-top: 15px;
+    padding-top: 32px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #ED9696;
+}
+
+.Post{
+    width: 584px;
+    height: 642px; 
+    margin: 0 auto 60px;
+    background-color: #FFE1E1;
+    border-radius: 15px;
+    border: 1px solid #E8C5C5;
 }
 .RightMenuContainer{
     position: fixed; 
@@ -43,7 +68,53 @@ body{
     width: 337px;
     height: 95vh; 
     grid-column: 6;
+}
+
+.ExplorarMenu{
+    width: 100%;
+    height: 174px; 
     background-color: white;
     border-radius: 15px;
     border: 1px solid #ED9696;
+}
+
+.TagsMenu{
+    width: 100%;
+    height: 135px; 
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #ED9696;
+}
+.TrendingMenu{
+    width: 100%;
+    height: 550px; 
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #ED9696;
+}
+
+@media (max-width: 1443px){
+    .LeftMenuContainer{
+        display: none;
+    }
+    .principal{
+        grid-template-columns: auto 1025px auto;
+    }
+    .MainContentContainer{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1050px){
+    .principal{
+        grid-template-columns: auto 645px auto;
+    }
+    .RightMenuContainer{
+        display: none;
+    }
+    .MainContentContainer{
+        /* margin-left: 18px; */
+    }
 }
