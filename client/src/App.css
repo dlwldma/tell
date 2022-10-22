@@ -38,7 +38,7 @@ body{
     width: 100%;
     height: 175px; 
     background-color: white;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     border: 1px solid #ED9696;
 
 
@@ -109,12 +109,41 @@ body{
 
 @media (max-width: 1050px){
     .principal{
-        grid-template-columns: auto 645px auto;
+        display: block;
     }
     .RightMenuContainer{
         display: none;
     }
     .MainContentContainer{
-        /* margin-left: 18px; */
+        display: block;
+        width: 95%;
+        max-width: 600px;
+        height: 90%; 
+        margin: 20px auto;
+    }
+    .DoPostMenu{
+        height: 10vh; 
+        background-color: white;
+        /* border-radius: 15px; */
+        border: 1px solid #ED9696;
+    }
+
+    .PostSection{
+        width: 100%;
+        height: fit-content; 
+        margin-top: 8px;
+        padding-top: 15px;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid #ED9696;
+    }
+
+    .Post{
+        width: 95%;
+        height: 50vh; 
+        /* margin: 0 20 60px; */
+        background-color: #FFE1E1;
+        border-radius: 15px;
+        border: 1px solid #E8C5C5;
     }
 }
