@@ -1,0 +1,25 @@
+[
+    {
+        "profileID": "1",
+        "username": "dlwldma",
+        "password": "xxdd",
+        "posts": {
+            "postID": 1,
+            "postType": "image",
+            "postMedia": "https://ucarecdn.com/ed3729f2-a469-4723-876d-aa7f580a4802/937830.jpg",
+            "postText": "Inicio de la descripción de la experiencia. No existe un numero determinado de caracteres disponibles. Esto es solo la portada, cuando el usuario haga “click” en la experiencia, se abrirá abarcando gran parte de la pantalla ........."
+        }
+    },
+    {
+        "profileID": "1",
+        "username": "catitateamouwu",
+        "password": "xxdd",
+        "posts": {
+            "postID": 1,
+            "postType": "image",
+            "postMedia": "https://ucarecdn.com/ed3729f2-a469-4723-876d-aa7f580a4802/937830.jpg",
+            "postText": "Inicio de la descripción de la experiencia. No existe un numero determinado de caracteres disponibles. Esto es solo la portada, cuando el usuario haga “click” en la experiencia, se abrirá abarcando gran parte de la pantalla ........."
+        }
+    }
+
+]

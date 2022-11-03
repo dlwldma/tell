@@ -1,3 +1,6 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
 body{
     background-color: #FFECEC;
     overflow-x: hidden;
@@ -21,7 +24,7 @@ body{
     margin-right: 46px;
     border-radius: 15px;
     background-color: white;
-    border: 1px solid #ED9696;
+    box-shadow: 0 0 7px -1px #ED9696;
 }
 
 .MainContentContainer{
@@ -32,14 +35,16 @@ body{
     margin-top: 23px;
     margin-left: 383px;
     margin-right: 43px;
+    
 }
 
 .DoPostMenu{
     width: 100%;
     height: 175px; 
     background-color: white;
-    /* border-radius: 15px; */
-    border: 1px solid #ED9696;
+    border-radius: 15px;
+    /* border: 1px solid #ED9696; */
+    box-shadow: 0 0 7px -1px #ED9696;
 
 
 }
@@ -48,18 +53,70 @@ body{
     height: fit-content; 
     margin-top: 15px;
     padding-top: 32px;
+    padding-bottom: 1px;
     background-color: white;
     border-radius: 15px;
-    border: 1px solid #ED9696;
+    /* border: 1px solid #ED9696; */
+    box-shadow: 0 0 7px -1px #ED9696;
 }
 
 .Post{
     width: 584px;
-    height: 642px; 
+    height: fit-content;
     margin: 0 auto 60px;
+    padding-top: 35px;
+    padding-bottom: 25px;
     background-color: #FFE1E1;
-    border-radius: 15px;
-    border: 1px solid #E8C5C5;
+    border-radius: 30px;
+    /* border: 1px solid #E8C5C5; */
+}
+.Post > p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 1.12rem;
+}
+.Post > p:hover{
+    cursor: pointer;
+}
+
+.postImageContainer{
+    width: 93%;
+    height: fit-content;
+    overflow: hidden;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.postImageContainer > img {
+    display: block;
+    width: 100%;
+}
+.postImageContainer > img:hover{
+    cursor: pointer;
+}
+.postTextContainer{
+    width: 93%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 16px 40px;
+    background-color: white;;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 1px solid #FCCFCF;
+    border-right: 1px solid #FCCFCF;
+    border-bottom: 1px solid #FCCFCF;
+}
+.postTextContainer > p {
+    text-align: center;
+}
+img[src="/heart-icon.png"]{
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    margin-top: 19px;
+}
+img[src="/heart-icon.png"]:hover{
+    cursor: pointer;
 }
 .RightMenuContainer{
     position: fixed; 
@@ -75,7 +132,8 @@ body{
     height: 174px; 
     background-color: white;
     border-radius: 15px;
-    border: 1px solid #ED9696;
+    /* border: 1px solid #ED9696; */
+    box-shadow: 0 0 7px -1px #ED9696;
 }
 
 .TagsMenu{
@@ -84,7 +142,8 @@ body{
     margin-top: 15px;
     background-color: white;
     border-radius: 15px;
-    border: 1px solid #ED9696;
+    /* border: 1px solid #ED9696; */
+    box-shadow: 0 0 7px -1px #ED9696;
 }
 .TrendingMenu{
     width: 100%;
@@ -92,7 +151,8 @@ body{
     margin-top: 15px;
     background-color: white;
     border-radius: 15px;
-    border: 1px solid #ED9696;
+    /* border: 1px solid #ED9696; */
+    box-shadow: 0 0 8px -1px #ED9696;
 }
 
 @media (max-width: 1443px){
@@ -140,7 +200,7 @@ body{
 
     .Post{
         width: 95%;
-        height: 50vh; 
+        /* height: 50vh;  */
         /* margin: 0 20 60px; */
         background-color: #FFE1E1;
         border-radius: 15px;
