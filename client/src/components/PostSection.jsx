@@ -7,10 +7,11 @@ const PostSection = () => {
     const [postState, setPostState] = useState("none")
 
     const getData = async () =>{
-        /* const response = await axios.get('http://localhost:4000/api'); */
-
         //DEVELOPMENT
-        const response = await axios.get('https://tell-app.herokuapp.com/api');
+        const response = await axios.get('http://localhost:4000/api');
+
+        //DEPLOYMENT
+        /* const response = await axios.get('https://tell-app.herokuapp.com/api'); */
         const data = await response.data;
         return data;
     } 
