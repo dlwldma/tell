@@ -6,9 +6,12 @@ const RightMenu = () =>{
     return (
         <>
             <div className='RightMenuContainer'>
-                <ExplorarMenu />
-                <TagsMenu />
-                <TrendingMenu />
+                {/* <ExplorarMenu /> */}
+                <div className="DynamicContainer">
+                    <ExplorarMenu />
+                    <TagsMenu />
+                    <TrendingMenu />
+                </div>
             </div>
         </>
     )

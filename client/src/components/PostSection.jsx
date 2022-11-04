@@ -1,24 +1,32 @@
 import Post from "./Post";
 import axios from "axios";
+import getData from "../features/getData";
 import { useState, useEffect } from "react";
 
 const PostSection = () => {
-    const [profiles, setProfiles] = useState([]);
-    const [postState, setPostState] = useState("none")
+    const [post, setPosts] = useState([]);
+    const [postState, setPostState] = useState("none");
+    const posts = [];
 
-    const getData = async () =>{
-        //DEVELOPMENT
-        /* const response = await axios.get('http://localhost:4000/api'); */
-
-        //DEPLOYMENT
-        const response = await axios.get('https://tell-app.herokuapp.com/api');
-        const data = await response.data;
-        return data;
-    } 
-    
     useEffect(()=>{
         getData().then(data => {
-            setProfiles(data);
+            const likedProfiles = data[0].likedProfiles;
+            
+            likedProfiles.forEach(profile => {
+                const profilePost = profile.posts;
+                profilePost.forEach(likedPosts => {
+                   
+                    posts.push(likedPosts)
+                })
+            })
+            const ownPosts = data[0].posts;
+            ownPosts.forEach(ownPost => {
+                /* console.log(ownPost) */
+                posts.push(ownPost)
+            })
+            
+            /* console.log(posts) */
+            setPosts(posts)
             setPostState("loaded");
         })
     }, [])
@@ -30,8 +38,8 @@ const PostSection = () => {
             ) : (postState === "loading") ? (
                 <div>Cargando</div>
             ) : (
-                profiles.map((postProfile, key) => {
-                   return <Post key={key} name={postProfile.username} media={postProfile.posts.postMedia} postText={postProfile.posts.postText}></Post>     
+                post.map((post, key) => {
+                   return <Post key={key} name={post.postUsername} media={post.postMedia} postText={post.postText}></Post>     
                 })         
             )}
         </div>

@@ -13,7 +13,7 @@ const Post = (props) => {
             <div className="postTextContainer">
                 <p>{props.postText} </p>
             </div>
-            <img src="/heart-icon.png"/>  
+            <img className="postLikeIcon" src="/heart-icon.png"/>  
             
         </div>
     )

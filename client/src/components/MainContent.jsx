@@ -1,11 +1,11 @@
 import DoPostMenu from "./DoPostMenu";
 import PostSection from "./PostSection";
 
-const MainContent = () => {
+const MainContent = (props) => {
     return (
         <>
             <div className='MainContentContainer'>
-                <DoPostMenu />
+                <DoPostMenu imgSrc={props.imgSrc}/>
                 <PostSection />
             </div>
             

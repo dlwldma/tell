@@ -2,24 +2,67 @@
     {
         "profileID": "1",
         "username": "dlwldma",
+        "profilePicture": "https://ucarecdn.com/0ed75708-fa2b-4e03-b344-399c26e1f5de/cropped192010801002134.png",
+        "email": "",
         "password": "xxdd",
-        "posts": {
+        "posts": [{
             "postID": 1,
+            "postUsername": "dlwldma",
             "postType": "image",
+            "postTag": "",
             "postMedia": "https://ucarecdn.com/ed3729f2-a469-4723-876d-aa7f580a4802/937830.jpg",
-            "postText": "Inicio de la descripción de la experiencia. No existe un numero determinado de caracteres disponibles. Esto es solo la portada, cuando el usuario haga “click” en la experiencia, se abrirá abarcando gran parte de la pantalla ........."
-        }
-    },
-    {
-        "profileID": "1",
-        "username": "catitateamouwuxd",
-        "password": "xxdd",
-        "posts": {
-            "postID": 1,
+            "postText": "Primera publicación de mi propio perfil"
+        },
+        {
+            "postID": 3,
+            "postUsername": "dlwldma",
             "postType": "image",
-            "postMedia": "https://ucarecdn.com/683170cc-33bf-410e-a084-bf640fe2934e/cropped160012001160645.png",
-            "postText": "Inicio de la descripción de la experiencia. No existe un numero determinado de caracteres disponibles. Esto es solo la portada, cuando el usuario haga “click” en la experiencia, se abrirá abarcando gran parte de la pantalla ........."
-        }
-    }
+            "postTag": "",
+            "postMedia": "https://ucarecdn.com/a2df28a9-2290-4283-b46a-ded005f573c6/download.jfif",
+            "postText": "悲しいいこれ・・"
+        }],
+        "likedProfiles": [{
+            "profileID": "2",
+            "username": "wavy colde",
+            "posts": [{
+                "postID": 1,
+                "postUsername": "wavy colde",
+                "postType": "image",
+                "postMedia": "https://ucarecdn.com/683170cc-33bf-410e-a084-bf640fe2934e/cropped160012001160645.png",
+                "postText": "Inicio de la descripción de la experiencia. No existe un numero determinado de caracteres disponibles. Esto es solo la portada, cuando el usuario haga “click” en la experiencia, se abrirá abarcando gran parte de la pantalla ........."
+            }, 
+            {
+                "postID": 2,
+                "postUsername": "wavy colde",
+                "postType": "image",
+                "postMedia": "https://ucarecdn.com/0c8be4a4-3a95-448c-b7ec-3d0f6f26a145/1101615.png",
+                "postText": ""
+            }
+            
+            ]},
+            {
+            "profileID": "3",
+            "username": "don sexo",
+            "posts": [{
+                "postID": 1,
+                "postUsername": "don sexo",
+                "postType": "image",
+                "postMedia": "https://ucarecdn.com/48084722-eecb-48d1-94c1-6629bfcb1618/1120777.jpg",
+                "postText": "이거머야?"
+            }]}
+        
+        ],
+        "messages": [
 
+        ],
+        "notifications": [
+
+        ],
+        "selectedTags": [
+            {}
+        ],
+        "liked-posts": [
+            
+        ]
+    }
 ]
