@@ -1,6 +1,7 @@
 import LeftMenu from './components/LeftMenu'
 import MainContent from './components/MainContent'
 import RightMenu from './components/RightMenu'
+import NavVar from './components/NavVar'
 import getData from './features/getData'
 import { useState, useEffect} from 'react';
 import './app.css'
@@ -36,6 +37,7 @@ const App = () => {
                     <LeftMenu imageSrc={user.profilePicture} username={user.username} />
                     <MainContent imgSrc={user.profilePicture}/>
                     <RightMenu />
+                    <NavVar />
                 </div>              
             </div>
            

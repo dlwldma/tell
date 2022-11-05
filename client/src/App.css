@@ -227,9 +227,9 @@ body{
     margin: 0 auto;
     margin-top: 19px;
 }
-img[src="/heart-icon.png"]:hover{
+/* img[src="/heart-icon.png"]:hover{
     cursor: pointer;
-}
+} */
 .RightMenuContainer{
     position: fixed; 
     top: 19px;
@@ -398,6 +398,16 @@ img[src="/heart-icon.png"]:hover{
     cursor: pointer;
 }
 
+
+.NavVarContainer{
+    display: none;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+    height: 80px; 
+    background-color: white;
+    border-top: 1px solid black;
+}
 @media (max-width: 1443px){
     .LeftMenuContainer{
         display: none;
@@ -407,6 +417,9 @@ img[src="/heart-icon.png"]:hover{
     }
     .MainContentContainer{
         margin-left: 0;
+    }
+    .NavVarContainer{
+        display: block;
     }
 }
 
@@ -419,7 +432,7 @@ img[src="/heart-icon.png"]:hover{
     }
     .MainContentContainer{
         display: block;
-        width: 95%;
+        width: 100%;
         max-width: 600px;
         height: 90%; 
         margin: 20px auto;
@@ -428,7 +441,6 @@ img[src="/heart-icon.png"]:hover{
         height: 10vh; 
         background-color: white;
         /* border-radius: 15px; */
-        border: 1px solid #ED9696;
     }
 
     .PostSection{
@@ -438,7 +450,6 @@ img[src="/heart-icon.png"]:hover{
         padding-top: 15px;
         background-color: white;
         border-radius: 15px;
-        border: 1px solid #ED9696;
     }
 
     .Post{
@@ -449,4 +460,49 @@ img[src="/heart-icon.png"]:hover{
         border-radius: 15px;
         border: 1px solid #E8C5C5;
     }
+
+
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: white;
+    }
+    .DoPostMenu{
+        display: none;
+        /* border-radius: 15px; */
+    }
+    .PostSection{
+        margin-top: 0;
+        border-radius: 0;
+        padding: 10px 4px;
+    }
+    .Post{
+        width: 98%;
+        padding-top: 12px;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+    }
+    .Post > p {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+    .postLikeIcon{
+        width: 35px;
+        margin-top: 5px;
+    }
+    .postImageContainer{
+        width: 96%;
+        box-shadow: 0 0 7px -1px #ED9696;
+    }
+    .postTextContainer{
+        width: 96%;
+        font-size: 0.8rem;
+        box-shadow: 0 0 7px -1px #ED9696;
+    }
+    .MainContentContainer{
+        background-color: white;;
+        margin-top: 0px;
+    }
+    
 }
